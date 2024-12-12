@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculo</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f3e8ff;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            background-color: #6a1b9a;
+            color: #fff;
+            padding: 15px;
+            border-radius: 10px 10px 0 0;
+        }
+        .header img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-right: 20px;
+            border: 3px solid #fff;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 28px;
+        }
+        .header p {
+            margin: 5px 0;
+            font-size: 16px;
+        }
+        .section {
+            margin-top: 20px;
+        }
+        .section h2 {
+            margin-bottom: 10px;
+            font-size: 22px;
+            color: #6a1b9a;
+            border-bottom: 2px solid #d1c4e9;
+            padding-bottom: 5px;
+        }
+        .section ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .section ul li {
+            margin-bottom: 10px;
+            line-height: 1.6;
+        }
+        .skills span {
+            display: inline-block;
+            background: #d1c4e9;
+            color: #4a148c;
+            padding: 8px 12px;
+            margin: 5px;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+        .section p {
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="FotoCurriculo.jpg" alt="Your Photo" id="photo">
+            <div>
+                <h1>Jorge Luiz</h1>
+                <p>+55 (88) 981759890 | jorgearaujo1854@gmail.com</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Profile</h2>
+            <p>A highly motivated and enthusiastic student of Analysis and Systems Development (ADS), eager to begin a career in technology with a focus on Artificial Intelligence. Passionate about learning, problem-solving, and applying programming knowledge to real-world challenges.</p>
+        </div>
+
+        <div class="section">
+            <h2>Skills</h2>
+            <div class="skills">
+                <span>Programming (Java, Python)</span>
+                <span>Data Structures</span>
+                <span>Machine Learning Basics</span>
+                <span>Database Management (SQL, PostgreSQL)</span>
+                <span>Version Control (Git)</span>
+                <span>Critical Thinking</span>
+                <span>Problem-Solving</span>
+                <span>Teamwork</span>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Experience</h2>
+            <ul>
+                <li>
+                    <strong>Academic Projects</strong> <br>
+                    - Developed a basic recommendation system as part of a group project. <br>
+                    - Created a simple chatbot using Python for a college assignment.<br>
+                    - Designed a relational database for a simulated library system.
+                </li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Education</h2>
+            <p><strong>Student, Analysis and Systems Development (ADS), IFCE</strong> <br> February 2024 – Present <br> Currently pursuing a degree with coursework focused on programming, database management, and systems analysis.</p>
+        </div>
+
+        <div class="section">
+            <h2>Languages</h2>
+            <p>English (Basic), Spanish (Basic)</p>
+        </div>
+
+        <div class="section">
+            <h2>References</h2>
+            <p>Available upon request. Professor Luana Dantas from IFCE has mentored or tutored several of my projects. She can provide valuable insights into my skills and experiences. For direct contact, please use the following number: <strong>+55 (88) 92926590</strong>.</p>
+        </div>        
+        
+    </div>
+</body>
+</html>
