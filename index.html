@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Curriculo</title>
+    <title>Currículo</title>
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -27,6 +27,7 @@
             color: #fff;
             padding: 15px;
             border-radius: 10px 10px 0 0;
+            flex-wrap: wrap;
         }
         .header img {
             width: 100px;
@@ -35,6 +36,10 @@
             margin-right: 20px;
             border: 3px solid #fff;
         }
+        .header div {
+            flex: 1;
+            min-width: 200px;
+        }
         .header h1 {
             margin: 0;
             font-size: 28px;
@@ -42,6 +47,7 @@
         .header p {
             margin: 5px 0;
             font-size: 16px;
+            word-wrap: break-word;
         }
         .section {
             margin-top: 20px;
@@ -73,64 +79,87 @@
         .section p {
             line-height: 1.6;
         }
+        @media (max-width: 600px) {
+            .header {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            .header img {
+                margin-bottom: 10px;
+            }
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="header">
-            <img src="FotoCurriculo.jpg" alt="Your Photo" id="photo">
+            <img src="FotoCurriculo.jpeg" alt="Sua Foto" id="photo">
             <div>
                 <h1>Jorge Luiz</h1>
-                <p>+55 (88) 981759890 | jorgearaujo1854@gmail.com</p>
+                <p>+55 (88) 98175-9890 | jorge.araujo.dev@gmail.com</p>
+                <p><a href="https://linkedin.com/in/jorge-araujo-dev" target="_blank">LinkedIn</a> | <a href="https://github.com/JorgeALDev" target="_blank">GitHub</a></p>
             </div>
         </div>
 
         <div class="section">
-            <h2>Profile</h2>
-            <p>A highly motivated and enthusiastic student of Analysis and Systems Development (ADS), eager to begin a career in technology with a focus on Artificial Intelligence. Passionate about learning, problem-solving, and applying programming knowledge to real-world challenges.</p>
+            <h2>Perfil</h2>
+            <p>Estudante altamente motivado e entusiasmado do curso de Análise e Desenvolvimento de Sistemas (ADS), com o objetivo de iniciar uma carreira na área de tecnologia em Curitiba. Possuo grande interesse em aprendizado, resolução de problemas e aplicação de conhecimentos de programação em desafios da vida real.</p>
         </div>
 
         <div class="section">
-            <h2>Skills</h2>
+            <h2>Habilidades</h2>
             <div class="skills">
-                <span>Programming (Java, Python)</span>
-                <span>Data Structures</span>
-                <span>Machine Learning Basics</span>
-                <span>Database Management (SQL, PostgreSQL)</span>
-                <span>Version Control (Git)</span>
-                <span>Critical Thinking</span>
-                <span>Problem-Solving</span>
-                <span>Teamwork</span>
+                <span>Programação (Java, Python)</span>
+                <span>Estruturas de Dados</span>
+                <span>Redes de Computadores</span>
+                <span>Machine Learning (Noções de regressão e classificação)</span>
+                <span>Banco de Dados (SQL, PostgreSQL)</span>
+                <span>Segurança da Informação (Práticas de segurança em redes e análise de vulnerabilidades)</span>
+                <span>Controle de Versão (Git)</span>
+                <span>Pensamento Crítico</span>
+                <span>Resolução de Problemas</span>
+                <span>Trabalho em Equipe</span>
             </div>
         </div>
 
         <div class="section">
-            <h2>Experience</h2>
+            <h2>Experiência</h2>
             <ul>
                 <li>
-                    <strong>Academic Projects</strong> <br>
-                    - Developed a basic recommendation system as part of a group project. <br>
-                    - Created a simple chatbot using Python for a college assignment.<br>
-                    - Designed a relational database for a simulated library system.
+                    <strong>Desenvolvedor de Projetos Acadêmicos</strong> <br>
+                    - Criou um sistema básico de recomendação em Python usando algoritmos de filtragem simples. <br>
+                    - Desenvolveu um chatbot em Python, integrando funcionalidades de resposta automática usando bibliotecas como NLTK. <br>
+                    - Modelou um banco de dados relacional para um sistema simulado de aluguel de veículos, usando PostgreSQL para gerenciamento.
                 </li>
             </ul>
         </div>
 
         <div class="section">
-            <h2>Education</h2>
-            <p><strong>Student, Analysis and Systems Development (ADS), IFCE</strong> <br> February 2024 – Present <br> Currently pursuing a degree with coursework focused on programming, database management, and systems analysis.</p>
+            <h2>Projetos de Extensão</h2>
+            <ul>
+                <li>
+                    <strong>Projeto DevUp</strong> <br>
+                    *Período*: [21/10/2024] – [21/12/2025] <br>
+                    *Descrição*: Participação ativa no Projeto DevUp, uma iniciativa do IFCE Campus Tabuleiro dedicada a fornecer conteúdos educacionais sobre desenvolvimento de software para iniciantes. Responsabilidades incluíram a criação de materiais didáticos, organização de workshops e gestão de conteúdo para a página do Instagram (@projetodevup), visando ampliar o acesso ao conhecimento em tecnologia na região.
+                </li>
+            </ul>
         </div>
 
         <div class="section">
-            <h2>Languages</h2>
-            <p>English (Basic), Spanish (Basic)</p>
+            <h2>Educação</h2>
+            <p><strong>Análise e Desenvolvimento de Sistemas (ADS), IFCE</strong> <br> Fevereiro de 2024 – Atual <br> Cursando disciplinas voltadas para programação, gerenciamento de banco de dados e análise de sistemas.</p>
+            <p><strong>Cursos Online</strong> <br>
+                - <strong>Segurança da Informação (Curso em Vídeo):</strong> Criptografia, proteção contra ataques e boas práticas de segurança. <br>
+                - <strong>Inteligência Artificial (Curso em Vídeo):</strong> Conceitos básicos e aplicações práticas. <br>
+                - <strong>Projetos de Sistemas de TI (Fundação Bradesco):</strong> Planejamento, desenvolvimento e prototipagem de sistemas.
+            </p>
         </div>
 
         <div class="section">
-            <h2>References</h2>
-            <p>Available upon request. Professor Luana Dantas from IFCE has mentored or tutored several of my projects. She can provide valuable insights into my skills and experiences. For direct contact, please use the following number: <strong>+55 (88) 92926590</strong>.</p>
-        </div>        
-        
+            <h2>Idiomas</h2>
+            <p>Inglês (Básico)</p>
+        </div>
     </div>
 </body>
 </html>
